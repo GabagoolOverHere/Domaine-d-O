@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/retouches.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test site avec bootstrap compilé</title>
+  </head>
+  <body>
+    <header class="container bg-white mt-2">
+      <div class="row">
+        <div class="col-4">
+          <i class="icons mr-2 fab fa-facebook-f"></i>
+          <i class="icons mr-2 fab fa-twitter"></i>
+          <i class="icons mr-2 fab fa-youtube"></i>
+          <i class="icons mr-2 fab fa-tripadvisor"></i>
+        </div>
+        <div class="col-4">
+          <img src="./Images/logo-domaine-d-o.png" alt="Logo Domaine d'O" />
+        </div>
+        <div class="col-4 d-flex">
+          <button
+            class="bg-white text-primary text-uppercase font-weight-bold border border-primary h-50 mr-3 pl-1 pr-1 text-nowrap"
+          >
+            <p><i class="far fa-bell text-dark h4"></i> notifications</p>
+          </button>
+          <button
+            class="text-primary text-primary text-uppercase font-weight-bold border border-primary h-50 pl-1 pr-1 text-nowrap"
+          >
+            <i class="fas fa-bookmark"></i> abonnement
+          </button>
+        </div>
+      </div>
+      <nav class="row mt-3">
+        <div class="col-2 h1 mb-2 text-primary text-uppercase"><i class="fas fa-bars"></i></div>
+        <div class="col-2 h5 text-uppercase text-primary font-weight-bolder">spectacles</div>
+        <div class="col-2 h5 text-uppercase text-dark font-weight-bolder">zoom-sur</div>
+        <div class="col-2 h5 text-uppercase text-dark font-weight-bolder">avec le public</div>
+        <div class="col-2 h5 text-uppercase text-dark font-weight-bolder">pratique</div>
+        <div class="col-2 h1 mb-2"><i class="fas fa-search"></i></div>
+      </nav>
+    </header>
+    <main>
+      <section class="tous_les_spectacles container-fluid d-flex bg-light">
+
+        <section class="container offset-1 pt-5 pl-5 pb-5">
+
+          <div class="row text-dark text-uppercase h3 font-weight-bolder">
+            <div class="col">Tous les spectacles du domaine d'o</div>
+          </div>
+
+          <div class="row no-gutters d-flex flex-nowrap">
+            <div class="col text-nowrap">
+              <button class="btn btn-dark rounded-0 mr-2 text-uppercase font-weight-bolder pl-3 pr-3 pt-2 pb-2">festival arabesque 2020</button>
+            </div>
+
+            <div class="col-md-7 ml-4">
+              <button class="btn btn-dark rounded-0 text-uppercase font-weight-bolder pl-3 pr-3 pt-2 pb-2">festival folies d'o 2020</button>
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col">
+              <button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">FESTIVAL RADIO FRANCE OCCITANIE MONTPELLIER 2019</button>
+            </div>
+          </div>
+
+          <div class="row no-gutters d-flex flex-nowrap">
+            <div class="col-md-5 mr-4 text-nowrap">
+              <button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">la métro fait son cirque</button>
+            </div>
+
+            <div class="col">
+              <button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3 text-nowrap">la métropole fait son cinéma 2020</button>
+            </div>
+          </div>
+
+          <div class="row d-flex flex-nowrap no-gutters">
+            <div class="col mr-4 text-nowrap"><button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">les nuits d'o 2020</button></div>
+            <div class="col-md-6 text-nowrap"><button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">pringtemps des comédiens 2020</button></div>
+            <div class="col-md-4 text-nowrap">
+              <button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">saison 20/21</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-dark rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">saperlipopette 2020</button>
+            </div>
+          </div>
+
+          <div class="row  mt-4">
+            <div class="col font-weight-bold h5"><input type="checkbox" class="checkbox mr-2">Théâtre</div>
+            <div class="col font-weight-bold h5"><input type="checkbox" class="checkbox mr-2">Cirque</div>
+            <div class="col font-weight-bold h5"><input type="checkbox" class="checkbox mr-2">Danse</div>
+            <div class="col font-weight-bold h5"><input type="checkbox" class="checkbox mr-2">Musique</div>
+            <div class="col font-weight-bold h5"><input type="checkbox" class="checkbox mr-2">Autre</div>
+          </div>
+
+          <div class="row text-nowrap mt-3">
+            <div class="col font-weight-bold h5">Vous venez avec des enfants? Spectacles à partir de : <select name="4 ans" id="age">
+              <option value="5 ans">5 ans</option>
+              <option value="6 ans">6 ans</option>
+              <option value="7 ans">7 ans</option>
+              <option value="8 ans">8 ans</option>
+              <option value="9 ans">9 ans</option></div></select>
+          </div>
+
+          <div class="row offset-9">
+            <div class="col">
+              <button class="btn btn-primary rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3">filtrer les spectacles</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="calendrier container offset-md-1 d-flex flex-column justify-content-center bg-primary">
+          <div class="row">
+            <div class="col-md-4 mb-0 text-white h4 font-weight-bolder text-uppercase text-nowrap">Le domaine d'o <br>mois par mois
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mt-0"><button class="btn btn-light rounded-0 mt-3 text-uppercase font-weight-bolder pl-3 pr-3"><i class="far fa-calendar-alt"></i> le calendrier</button></div>
+          </div>
+        </section>
+      </section>
+      <section class="container mt-5" class="shows">
+        <div class="row mt-5">
+          <div class="col-4">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/2.m1_c_marie_clauzade.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">Jeu 18 mars 20h00</div>
+              <div class="h4 text-uppercase font-weight-bolder">MADAM #6</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/20200222_104009.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">Sam 20 mars 10h00</div>
+              <div class="h4 text-uppercase font-weight-bolder">Stage musique : Rythmes et percussions africaines</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/23a_my-dead-bird-2cdivin-triumph.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">24/03/2021 > 25/03/2021</div>
+              <div class="h4 text-uppercase font-weight-bolder">MY DEAD BIRD</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/23b_silencecjulien-athonady.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">24/03/2021 > 25/03/2021</div>
+              <div class="h4 text-uppercase font-weight-bolder">silence</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/23d_imbroglio-2csylvain-dissoubray.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">Mar 23 mars 20h00</div>
+              <div class="h4 text-uppercase font-weight-bolder">LES DAMES QUI PETENT / IMBROGLIO</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/23e_resistecian-grandjean.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">Sam 27 mars 20h00</div>
+              <div class="h4 text-uppercase font-weight-bolder">résiste</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/24_rebbibia-2c-remi-blasquez_0.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">01/04/2021 > 02/04/2021</div>
+              <div class="h4 text-uppercase font-weight-bolder">REBIBBIA</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/3_en-attendant-le-grand-soircpierre-rigo.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">14/04/2021 > 16/04/2021</div>
+              <div class="h4 text-uppercase font-weight-bolder">EN ATTENDANT LE GRAND SOIR</div>
+              <div class="text-primary font-weight-normal">ANNULE en raison de la crise sanitaire</div><div class="text-primary font-weight-bold">(Report à l'étude)</div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-image ombre pr-3 d-flex flex-column justify-content-between" style=" background-image: url('./Images/visuel_madam6_-_hdnovo_western_-_carole_pralong_et_elise_blanchard_khimaira.jpg');
+            height: 500px; ">
+              <div class="text-white bg-dark rounded-0 d-inline-block pb-1 pt-1 w-25 h6 small text-nowrap
+              ml-2 mt-2 text-uppercase font-weight-bold pl-1">saison 20/21</div>
+              <div class="mb-2"><div class="ml-3 text-white font-weight-bold"><div class="d-inline-block font-weight-bolder underline">Jeu 18 mars 20h00</div>
+              <div class="h4 text-uppercase font-weight-bolder">bootstrap</div>
+              <div class="text-primary font-weight-normal"><p>ANNULE en raison d'une div non fermée</p></div></div>
+              <div class="boutons d-flex justify-content-between ml-3 mt-3 align-items-end"><button class="btn btn-light border border-primary text-primary font-weight-bold text-uppercase rounded-0">
+                détails
+              </button>
+              <button class="btn btn-primary border border-primary text-light font-weight-bold text-uppercase rounded-0">
+                réserver
+              </button></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 pb-5 border-bottom border-dark">
+          <div class="col">
+            <div class="d-flex justify-content-center"><button class="btn btn-primary rounded-0 text-light font-weight-bolder mr-1 border border-dark">1</button>
+            <button class="btn btn-light rounded-0 text-dark font-weight-bolder mr-1 border border-dark">2</button></div>
+            
+          </div>
+        </div>
+      </section>
+    <footer class="container">
+      <div class="row mt-3">
+        <div class="col mt-3">
+          <div class="nav">
+            <ul class="list-unstyled d-flex flex-column h5">
+              <li><a href="http://">Espace technique</a></li>
+              <li><a href="http://">Espace multimédia</a></li>
+              <li><a href="http://">Lettre d'info</a></li>
+              <li><a href="http://">Partenaires</a></li>
+              <li><a href="http://">Crédits</a></li>
+              <li><a href="http://">Mentions légales</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="paragraphe_footer col-2 border-top border-dark mt-3 pt-3">
+          <p><span class="font-weight-bold">Domaine d'O</span></p>
+          <p>178, rue de la Carriérasse
+            34090 Montpellier</p>
+          <p>Tél. : 0800 200 165
+            service et appel gratuits</p>
+        </div>
+        <div class="paragraphe_footer col-5 mt-3">
+          <p>Le domaine d'O est un domaine d'art et de spectacles pluridisciplinaire : <span class="font-weight-bold">théâtre, musique, cirque, danse</span>, spectacles <span class="font-weight-bold">jeune public.</span></p>
+          <p>Il abrite un amphithéâtre de 1800 places, le théâtre Jean-Claude Carrière de 600 à 1200 places, un bistrot et une pinède de 3 hectares. Le domaine d'O produit une saison culturelle et quatre <span class="font-weight-bold">festivals</span> et accueille quatre autres festivals.</p>
+        </div>
+        <div class="col mt-3">
+          <img src="./Images/mmm.gif" style="height: 150px" alt="Montpellier Méditérranée Métropole">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+                    
